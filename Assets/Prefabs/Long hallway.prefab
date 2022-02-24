@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1810880796744580583}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.20371, y: 2.652381, z: -13.728368}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 2, z: 2}
   m_Children:
   - {fileID: 7554025716637689536}
   - {fileID: 6590657973578864969}
@@ -39,6 +39,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 89545910611298663}
     m_Modifications:
+    - target: {fileID: 58189839423802750, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6254431bfa58b814083def9d4f02c1eb, type: 2}
+    - target: {fileID: 2257259363520789875, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6254431bfa58b814083def9d4f02c1eb, type: 2}
+    - target: {fileID: 2925926672236074904, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.8379694
+      objectReference: {fileID: 0}
     - target: {fileID: 3150014936210650308, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -83,14 +95,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4350198559439327243, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 02414029e6001aa428d36b275f395d5f, type: 2}
     - target: {fileID: 4791068579415073073, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4793280722581866662, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.1
       objectReference: {fileID: 0}
     - target: {fileID: 6099345497102397715, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
       propertyPath: m_Name
       value: Hallway
       objectReference: {fileID: 0}
+    - target: {fileID: 7136432033542911044, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7589902652301319834, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6254431bfa58b814083def9d4f02c1eb, type: 2}
+    - target: {fileID: 8488842073529781457, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0090789
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488842073529781457, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_Center.x
+      value: 9.015357e-12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488842073529781457, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_Center.y
+      value: -0.004537577
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856710321818845599, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6254431bfa58b814083def9d4f02c1eb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
 --- !u!4 &7554025716637689536 stripped
@@ -105,6 +149,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 89545910611298663}
     m_Modifications:
+    - target: {fileID: 58189839423802750, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6254431bfa58b814083def9d4f02c1eb, type: 2}
+    - target: {fileID: 2257259363520789875, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6254431bfa58b814083def9d4f02c1eb, type: 2}
     - target: {fileID: 3150014936210650308, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -149,10 +201,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3951022219153083442, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350198559439327243, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 02414029e6001aa428d36b275f395d5f, type: 2}
     - target: {fileID: 6099345497102397715, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
       propertyPath: m_Name
       value: Hallway (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7136432033542911044, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7589902652301319834, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6254431bfa58b814083def9d4f02c1eb, type: 2}
+    - target: {fileID: 7775414416818956645, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5319a31add453eb41976522a96e5b219, type: 2}
     - target: {fileID: 8130302087611729682, guid: 390b7047d8fe8634d912f637ff987015, type: 3}
       propertyPath: m_IsActive
       value: 0

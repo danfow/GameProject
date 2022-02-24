@@ -29,7 +29,7 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        /*
         sideMove = Input.GetAxis("Horizontal");
         frontBackMove = Input.GetAxis("Vertical");
 
@@ -86,12 +86,12 @@ public class CameraController : MonoBehaviour
             //moveCharacter();
             
         }
-        
+        */
     }
 
     private void FixedUpdate()
     {
-        moveCharacter();
+        //moveCharacter();
     }
 
     private void movePlayer()
