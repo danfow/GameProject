@@ -60,4 +60,28 @@ public class ThirdPersonMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("floorLaser"))
+        {
+            
+            Debug.Log("Hit a laser! You lost");
+            Debug.Break();
+        }
+
+        if (other.CompareTag("spotLight"))
+        {
+
+            Debug.Log("You were spotted! You lost");
+            Debug.Break();
+        }
+
+
+    }
 }
