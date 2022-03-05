@@ -8,6 +8,8 @@ TagManager:
   - Hallway
   - floorLaser
   - spotLight
+  - laserParticle
+  - upDownLaser
   layers:
   - Default
   - TransparentFX

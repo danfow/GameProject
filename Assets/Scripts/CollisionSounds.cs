@@ -7,6 +7,7 @@ public class CollisionSounds : MonoBehaviour
     public GameObject ObjectToMakeSound;
     private AudioSource objectAudio;
     public AudioClip audioClip;
+
     private float clipDuration = 1.0f;
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class CollisionSounds : MonoBehaviour
         {
             //objectAudio.PlayOneShot(audioClip, clipDuration);
             AudioSource.PlayClipAtPoint(audioClip, ObjectToMakeSound.transform.position);
+            FindObjectOfType<SpawnManager>().scoreValue++; // increase score with each coin collected
             Destroy(ObjectToMakeSound);
         }
     }

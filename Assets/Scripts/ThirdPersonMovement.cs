@@ -15,7 +15,7 @@ public class ThirdPersonMovement : MonoBehaviour
     public float speed = 6f;
 
     Vector3 velocity;
-    public float gravity = -9.81f;
+    public float gravity = -9.81f; //change back
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
@@ -61,25 +61,32 @@ public class ThirdPersonMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnControllerColliderHit(ControllerColliderHit collision)
     {
-        
+        if (collision.gameObject.name == "Gold pile")
+        {
+            FindObjectOfType<SpawnManager>().isGameOver = true;
+            //Debug.Log("You won!");
+            //Debug.Break();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("floorLaser"))
+        if (other.CompareTag("floorLaser") || other.CompareTag("upDownLaser"))
         {
-            
-            Debug.Log("Hit a laser! You lost");
-            Debug.Break();
+            FindObjectOfType<SpawnManager>().isGameOver = true;
+            FindObjectOfType<SpawnManager>().gotHit = true;
+            //Debug.Log("Hit a laser! You lost");
+           //Debug.Break();
         }
 
         if (other.CompareTag("spotLight"))
         {
-
-            Debug.Log("You were spotted! You lost");
-            Debug.Break();
+            FindObjectOfType<SpawnManager>().isGameOver = true;
+            FindObjectOfType<SpawnManager>().gotHit = true;
+            //Debug.Log("You were spotted! You lost");
+            //Debug.Break();
         }
 
 
